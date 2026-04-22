@@ -7,7 +7,7 @@ function getStorage(name) {
     return localStorage.getItem(name);
 }
 
-    fetch('searchEngines.json')
+    fetch('./files/searchEngines.json')
         .then(response => response.json())
         .then(data => {
             const searchEngines = data.searchEngines;
